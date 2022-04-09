@@ -11,14 +11,14 @@ module.exports = {
 
     output:{
         clean: true,
-        filename: 'main.[contenthash].js',
+        filename: 'main.[fullhash].js',
     },
 
-    module:{
+    module:{ 
         rules:[
 
             {
-                test: /\.html$/,
+                test: /\.html$/i,
                 loader: "html-loader",
                 options: {
                     // Disables attributes processing
@@ -27,7 +27,7 @@ module.exports = {
             },
             
             {
-                test: /\.css$/,
+                test: /\.css$/i,
                 exclude: /styles.css$/,
                 use:['style-loader', 'css-loader']
             },
