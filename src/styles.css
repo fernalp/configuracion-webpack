@@ -1,0 +1,10 @@
+html, body{
+    margin: 0;
+    background-color: #ddd;
+}
+body{
+    margin-left: 15px;
+}
+img{
+    width: 200px;
+}
